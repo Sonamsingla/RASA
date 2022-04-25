@@ -1,0 +1,125 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+   - hey
+   - hello
+   - hi
+   - hello there
+   - good morning
+   - good evening
+   - moin
+   - hey there
+   - let's go
+   - hey dude
+   - goodmorning
+   - goodevening
+   - good afternoon
+   - Inc
+   - data
+   - ticket
+- intent: goodbye
+  examples: |
+   - cu
+   -  good by
+   -  cee you later
+   -  good night
+   - back
+- intent: Sla
+  examples: |
+   - Sla
+   - sla wise
+- intent: Incident
+  examples: |
+   - types of incidents
+   - what are the types of incidents
+   - how manu incidents are there
+   - can you show me incidents types
+- intent: Threats
+  examples: |
+   - threat
+- intent: Resolved
+  examples: |
+   - resolved
+- intent: Reviewed
+  examples: |
+   - reviewed
+- intent: Send_for_review
+  examples: |
+   - send for review
+- intent: Status_chart
+  examples: |
+   - status chart
+- intent: Priority_wise1
+  examples: |
+   - priority.priorities
+- intent: Prior1
+  examples: |
+   - P1
+   - Priority1
+- intent: Prior2
+  examples: |
+   - P2
+   - Priority2
+- intent: Prior3
+  examples: |
+   - P3
+   - Priority3
+- intent: Mf
+  examples: |
+   - Member Firm
+   -  MF
+   -  Firm
+- intent: Canada
+  examples: |
+   - Canada
+   - CDN
+- intent: India
+  examples: |
+   - India
+   - IN
+- intent: China
+  examples: |
+   - China
+   - Ch
+- intent: Mexico
+  examples: |
+   - Mexico
+   - Mx
+- intent: UK
+  examples: |
+   - UK
+   - united kingdom
+- intent: Mf_chart
+  examples: |
+   - Mf_chart
+   - memberFirmCharts
+- intent: Priority_Chart
+  examples: |
+   - Priority_Chart
+   - Pchart
+- intent: AnyZeroDay
+  examples: |
+   - Zeroday
+   - zero
+   -  zero day
+- intent: critical_assets_vulnerable
+  examples: |
+   - critical_assets_vulnerable
+   - vunrable assets
+- intent: unpatched_assets
+  examples: |
+   - unpatched_assets
+   -  assets unpatched
+- intent: last_scan
+  examples: |
+   - last_scan
+   - latest scan
+- intent: Next_Scan
+  examples: |
+   - next scan
+   -  new scan
+- intent: pdf
+  examples: |
+   - report
+   - file

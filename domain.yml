@@ -1,0 +1,236 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - Sla
+  - Incident
+  - Threats
+  - Resolved
+  - Reviewed
+  - Send_for_review
+  - Status_chart
+  - Priority_wise1
+  - Prior1
+  - Prior2
+  - Prior3
+  - Mf
+  - Canada
+  - India
+  - China
+  - Mexico
+  - UK
+  - Mf_chart
+  - Priority_Chart
+  - AnyZeroDay
+  - critical_assets_vulnerable
+  - unpatched_assets
+  - last_scan
+  - Next_Scan
+  - pdf
+responses:
+  utter_greet:
+  - text: "Welcome to GSOC Chatbot, Please select your queriess"
+    buttons:
+    - title: "Incidents"
+      payload: /Incident
+    - title: "Threat Data"
+      payload: /Threats
+
+  utter_goodbye:
+  - text: "Welcome to GSOC Chatbot, Please select your queriess"
+    buttons:
+    - title: "Incidents"
+      payload: /Incident
+    - title: "Threat Data"
+      payload: /Threats
+
+  utter_Sla:
+  - text: "Total count SLA breached Incidents:  1"
+
+  utter_Incident:
+  - text: "Please select from below categories"
+    buttons:
+    - title: "Priority wise"
+      payload: /Priority_wise1
+    - title: "SLA"
+      payload: /Sla
+    - title: "MF"
+      payload: /Mf
+    - title: "Status wise"
+      payload: /utter_Status_chart
+    
+
+  utter_Threats:
+  - text: "Select the data you want"
+    buttons:
+    - title: "ZeroDay"
+      payload: /AnyZeroDay
+    - title: "Crtical Assets"
+      payload: /critical_assets_vulnerable
+    - title: "Unpatched Assets"
+      payload: /unpatched_assets
+    - title: "Last Scan"
+      payload: /last_scan"
+    - title: "Next Scan"
+      payload: /Next_Scan"
+
+  utter_Resolved:
+  - text: "Total count for Resolved Incidents today is 4"
+
+  utter_Reviewed:
+  - text: "Total count for Reviewed Incidents today is 7"
+
+  utter_Send_for_review:
+  - text: "Total count for Resolved Incidents today is 5"
+
+  utter_Status_chart:
+  - text: "Status wise ticket analysis"
+    custom:
+      payload: chart
+      data:
+        title: Status
+        labels:
+        - Resolved
+        - Reviewed
+        - Send for reviewed
+        backgroundColor:
+        - "#ffcd56"
+        - "#ff6384"
+        - "#009688"
+        - "#c45850"
+        chartsData:
+        - 4
+        - 7
+        - 5
+        chartType: bar
+        displayLegend: 'true'
+
+  utter_Priority_wise1:
+  - text: "Select the data you want"
+    buttons:
+    - title: "Priority 1"
+      payload: /Prior1
+    - title: "Priority 2"
+      payload: /Prior2
+    - title: "Priority 3"
+      payload: /Prior3
+    - title: "Data analysis"
+      payload: /utter_Priority_Chart
+
+  utter_Prior1:
+  - text: "Total count for P1 Incidents today:  5"
+
+  utter_Prior2:
+  - text: "Total count for P2 Incidents today :  7"
+
+  utter_Prior3:
+  - text: "Total count for P3 Incidents today:  10"
+
+  utter_Mf:
+  - text: "Select the Member Firm you want"
+    buttons:
+    - title: "Canada"
+      payload: /Canada
+    - title: "India"
+      payload: /India"
+    - title: "UK"
+      payload: /UK"
+    - title: "China"
+      payload: /utter_China
+    - title: "Mexico"
+      payload: /utter_Mexico
+    - title: "Compare"
+      payload: /utter_Mf_chart
+
+  utter_Canada:
+  - text: "Total ticket count for Canada :  14"
+
+  utter_India:
+  - text: "Total ticket count for India :  10"
+
+  utter_China:
+  - text: "Total ticket count for China :  13"
+
+  utter_Mexico:
+  - text: "Total ticket count for Mexico :  22"
+
+  utter_UK:
+  - text: "Total ticket count for Uk :  18"
+
+  utter_Mf_chart:
+  - text: "Member FIrm Ticket analysis"
+    custom:
+      payload: chart
+      data:
+        title: Member Firm
+        labels:
+        - UK
+        - India
+        - Canada
+        - China
+        - Mexico
+        backgroundColor:
+        - "#ffcd56"
+        - "#ff6384"
+        - "#009688"
+        - "#c45850"
+        - "#c45850"
+        chartsData:
+        - 14
+        - 10
+        - 18
+        - 13
+        - 22
+        chartType: pie
+        displayLegend: 'true'
+
+  utter_Priority_Chart:
+  - text: "Priority Wise Ticket analysis"
+    custom:
+      payload: chart
+      data:
+        title: Priority
+        labels:
+        - P1
+        - P2
+        - P3
+        backgroundColor:
+        - "#ffcd56"
+        - "#ff6384"
+        - "#009688"
+        - "#c45850"
+        chartsData:
+        - 5
+        - 7
+        - 10
+        chartType: line
+        displayLegend: 'true'
+
+  utter_AnyZeroDay:
+  - text: "Zero Day Count :  1"
+
+  utter_critical_assets_vulnerable:
+  - text: "Critical assets vunreable:  5"
+
+  utter_unpatched_assets:
+  - text: "Unpatched assets  2"
+
+  utter_last_scan:
+  - text: "Last scan date:   28-03-2022"
+
+  utter_Next_Scan:
+  - text: "Next scan date:   28-04-2022"
+
+  
+  utter_pdf:
+  - text: "Here is the PDF."
+    custom: 
+      payload: pdf_attachment
+      title: "Report"
+      url: "file:///C:/Users/nikhilgauhri/Desktop/TestData.xlsx"
+
+     
+  
+actions:
+  - utter_pdf
