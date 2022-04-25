@@ -1,0 +1,138 @@
+version: "3.0"
+
+stories:
+- story: greet_Story
+  steps: 
+  - intent: greet
+  - action: utter_greet
+
+- story: goodbye_Story
+  steps: 
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Sla_Story
+  steps: 
+  - intent: Sla
+  - action: utter_Sla
+
+- story: Incident_Story
+  steps: 
+  - intent: Incident
+  - action: utter_Incident
+
+- story: Threats_Story
+  steps: 
+  - intent: Threats
+  - action: utter_Threats
+
+- story: Resolved_Story
+  steps: 
+  - intent: Resolved
+  - action: utter_Resolved
+
+- story: Reviewed_Story
+  steps: 
+  - intent: Reviewed
+  - action: utter_Reviewed
+
+- story: Send_for_review_Story
+  steps: 
+  - intent: Send_for_review
+  - action: utter_Send_for_review
+
+- story: Status_chart_Story
+  steps: 
+  - intent: Status_chart
+  - action: utter_Status_chart
+
+- story: Priority_wise1_Story
+  steps: 
+  - intent: Priority_wise1
+  - action: utter_Priority_wise1
+
+- story: Prior1_Story
+  steps: 
+  - intent: Prior1
+  - action: utter_Prior1
+
+- story: Prior2_Story
+  steps: 
+  - intent: Prior2
+  - action: utter_Prior2
+
+- story: Prior3_Story
+  steps: 
+  - intent: Prior3
+  - action: utter_Prior3
+
+- story: Mf_Story
+  steps: 
+  - intent: Mf
+  - action: utter_Mf
+
+- story: Canada_Story
+  steps: 
+  - intent: Canada
+  - action: utter_Canada
+
+- story: India_Story
+  steps: 
+  - intent: India
+  - action: utter_India
+
+- story: China_Story
+  steps: 
+  - intent: China
+  - action: utter_China
+
+- story: Mexico_Story
+  steps: 
+  - intent: Mexico
+  - action: utter_Mexico
+
+- story: UK_Story
+  steps: 
+  - intent: UK
+  - action: utter_UK
+
+- story: Mf_chart_Story
+  steps: 
+  - intent: Mf_chart
+  - action: utter_Mf_chart
+
+- story: Priority_Chart_Story
+  steps: 
+  - intent: Priority_Chart
+  - action: utter_Priority_Chart
+
+- story: AnyZeroDay_Story
+  steps: 
+  - intent: AnyZeroDay
+  - action: utter_AnyZeroDay
+
+- story: critical_assets_vulnerable_Story
+  steps: 
+  - intent: critical_assets_vulnerable
+  - action: utter_critical_assets_vulnerable
+
+- story: unpatched_assets_Story
+  steps: 
+  - intent: unpatched_assets
+  - action: utter_unpatched_assets
+
+- story: last_scan_Story
+  steps: 
+  - intent: last_scan
+  - action: utter_last_scan
+
+- story: Next_Scan_Story
+  steps: 
+  - intent: Next_Scan
+  - action: utter_Next_Scan
+
+- story: pdf_Story
+  steps: 
+  - intent: pdf
+  - action: utter_pdf
+
